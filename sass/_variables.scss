@@ -1,0 +1,30 @@
+// Primary Colors - Text
+
+$sub-heading:       hsl(276, 100%, 81%); // Pale Violet (sub-heading at the top of the app UI)
+$chat-left:         hsl(276, 55%, 52%); // Moderate Violet (chat on the left)
+$chat-right:        hsl(271, 15%, 43%); // Desaturated Dark Violet (chat on the right)
+$placeholder-text:  hsl(206, 6%, 79%); // Grayish Blue
+$main-heading:      hsl(271, 36%, 24%); // Very Dark Desaturated Violet
+$main-description:  hsl(270, 7%, 64%); // Dark Grayish Violet (paragraph)
+
+
+// Primary Colors - Gradients
+
+$gradients-1:   hsl(293, 100%, 63%); // Light Magenta
+$gradients-2:   hsl(264, 100%, 61%); // Light Violet
+
+
+// Secondary Colors
+
+$white:                 hsl(0, 0%, 100%);
+$body-background:       hsl(0,0,98%);
+$app-background:        hsl(270, 20%, 96%); // Light Grayish Violet
+$send-btn-background:   hsl(271, 36%, 24%); // Very Dark Desaturated Violet
+$radio-btn-outline:     hsl(289, 100%, 72%); // Very Light Magenta
+
+// Font
+
+$font-family:   'Rubik', sans-serif;
+$font-normal:   400;
+$font-meduim:   500;
+$font-bold:     700;
