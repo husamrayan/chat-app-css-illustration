@@ -6,46 +6,73 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Chat App Css Illustration</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- To embed font-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <main class="main-block">
+    <div class="graphics graphics-left"></div><!-- left-graphic -->
+    <div class="graphics graphics-right"></div><!-- right-graphic -->
+    <div class="container">
+      <div class="chat-app-wrap">
+        <div class="chat-app-header">
+          <div class="header-ios-head">...</div><!-- ios-head -->
+          <div class="header-head">
+            <div class="header-back-icon">...</div><!-- back-icon -->
+            <div class="header-user-info">
+              <img src="images/avatar.jpg" alt="Samuel Green profile image">
+              <h4>Samuel Green</h4>
+              <p>Available to Walk</p>
+            </div><!-- user-info -->
+            <div class="header-settings-icon">...</div><!-- settings-icon -->
+          </div><!-- chat-app-head -->
+          <div class="chat-app-body">
+            <div class="body-chat-messages message-left">
+              <p>That sounds great. I’d be happy with that.</p>
+              <p>Could you send over some pictures of your dog, please?</p>
+            </div><!-- chat-messages -->
+            <div class="body-chat-messages message-right">
+              <p>Here are a few pictures. She’s a happy girl!</p>
+              <p>Can you make it?</p>
+            </div><!-- chat-messages -->
+            <div class="body-chat-messages message-right">
+              <img src="images/dog-image-1.jpg" alt="wondering dog">
+              <img src="images/dog-image-2.jpg" alt="dog lays on sands">
+              <img src="images/dog-image-3.jpg" alt="dog carrys a tree stem">
+              <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
 
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
+              <p>30 minute walk
+              $29</p>
+      
+              <p>1 hour walk
+              $49</p>
+            </div><!-- message-left -->
+            <div class="chat-app-type-area">
+              <p class="type-area-pleaceholder-text">Type a message…</p>
+              <button class="type-area-send-btn">send</button>
+            </div><!-- type area -->
+          </div><!-- chat-app-body -->
+        </div><!-- chat-app-header -->
+      </div><!-- chat-app-wrap -->
+      <div class="main-content-wrap">
+        <h1 class="main-content-heading">Simple booking</h1>
+        <p class="main-content-description">Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+        discuss arrangements and make bookings. Once the walk has been completed you can rate 
+        your walker and book again all through the chat.</p>
+      </div><!-- main-content-wrap -->
+      <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Your Name Here</a>.
+        </div><!-- attribution -->
+      </footer><!-- footer -->
+    </div><!-- container -->
+  </main><!-- chat-app-block -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
