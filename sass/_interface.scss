@@ -1,0 +1,249 @@
+// Interface styles
+.container {
+    // position: relative;
+    width: 913px;
+    // width: 56.4vw;
+    height: 100%;
+    display:flex;
+    justify-content: right;
+    align-items:center;
+    grid-gap: 125px;
+    // grid-gap: 8.7vw;
+}
+.chat-app-wrap {
+    width:  247px;
+    // width: 17vw;
+    height: 505px;
+    font-size: 10px;
+    padding: 10px;
+    padding-top: 11px;
+    background-color: $white;
+    border-radius: 30px;
+    box-shadow: 10px 16px 37px rgba(62, 39, 83, 0.15), 0px 73px 42px -52px rgba(62, 39, 83, 0.25);
+
+}
+.chat-app-container {
+    width: 100%;
+    height: 100%;
+    background-color: $app-background;
+    border-radius: 18px;
+}
+.chat-app-header {
+    width: 227px;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+    border-radius: 20px 20px 5px 5px;
+    background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+.header-ios-head {
+    width: 129px;
+    height: 18px;
+    border-radius: 0px 0px 14px 14px;
+    background-color: $white;
+    // margin: auto;
+    flex-shrink: 0;
+}
+.header-head {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 12px 16px 12px 14px;
+}
+.header-chevron-left-icon {
+    width: 15px;
+    text-align: left;
+}
+.header-ellipsis-v-icon {
+    width: 27px;
+    text-align: right;
+}
+.header-user-info {
+    width: 174px;
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0;
+    grid-gap: 8px;
+}
+.avatar-img{
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.info-content-username {
+    font-size: .656rem;
+    font-weight: $font-normal;
+    letter-spacing: 0.04em;
+}
+.info-content-status {
+    font-size: .5rem;
+    color: $sub-heading;
+    line-height: 1.5;
+}
+
+.main-content-wrap{
+    width:  442px;
+    // width: 30.6vw
+}
+.main-content-heading{
+    color: $main-heading;
+    margin-bottom: 22px;
+    font-size: 2.5rem;
+    font-weight: $font-meduim;
+}
+.main-content-description {
+    color: $main-description;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-weight: $font-normal;
+}
+.chat-app-body {
+    width: 100%;
+    height: 419px;
+    display: flex;
+    flex-flow: column;
+    // justify-content: space-between;
+    padding: 11px 7px 11px 8px;
+}
+.body-chat-messages {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 16px;
+}
+.message-item {
+    margin-bottom: 8px;
+    padding: 7px;
+    max-width: 59%;
+    border-radius: 10px 10px 10px 4px;
+    font-size: 8px;
+}
+.message-item:last-child {
+    margin-bottom: 0;
+}
+.message-left {
+    align-items: flex-start;
+}
+.message-left > .message-item {
+    background-color: hsl(275, 40%, 94%);
+    color: hsl(276, 55%, 52%);
+}
+.message-right > .message-item {
+    background-color: #fff;
+    color: hsl(271, 15%, 43%);
+    border-radius: 10px 10px 4px 10px;
+}
+.message-right {
+    align-items: flex-end;
+}
+.body-chat-images {
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 8px;
+    margin-bottom: 5px;
+}
+.chat-images-item img {
+    border-radius: 10px;
+}
+.body-chat-plans {
+    width: 100%;
+}
+.chat-plan-item {
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    margin-bottom: 8px;
+    padding: 9px 16px 8px 8px;
+    border-radius: 10px 10px 10px 4px;
+    font-size: 8px;
+    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: white;
+}
+.chat-plan-item:last-child {
+    margin: 0;
+}
+.plan-radio {
+    width: 12px;
+    height: 12px;
+    display: none;
+}
+.plan-label {
+    flex-basis: 100%;
+    color: $sub-heading;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    // margin-right: 16px;
+    padding-left: 20px;
+    cursor: pointer;  
+}
+ // this creates the outer circle for faux radio button
+.plan-label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 50%;
+    margin-top: -5px;
+    border: 1px solid $radio-btn-outline;
+    border-radius: 8px;
+}
+
+  // .options > label:after
+  // this creates the inner circle for active faux radio button
+.plan-label:after {
+    content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      top: 50%;
+      left: 8px;
+      margin-top: 0;
+      background: $body-background;
+      border-radius: 4px;
+      transition: .1s ease-in-out;
+}
+:checked + .plan-label:after {
+      height: 6px;
+      width: 6px;
+      margin-top: -2px;
+      left: 3px;
+}
+.plan-price {
+    font-size: 12px;
+    color: $white;
+    letter-spacing: 0.04em;
+}
+.chat-app-type-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white;
+    border-radius: 17px;
+    height: 37px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+.type-area-pleaceholder-text {
+    color: $placeholder-text;
+    font-size: 0.5rem;
+    letter-spacing: .04em;
+}
+.type-area-send-btn {
+    width: 24px;
+    height: 24px;
+    background-color: $send-btn-background;
+    border-radius: 50%;
+    color: #fff;
+    border: 0;
+    font-size: .968rem;
+    padding-right: 5px;
+    line-height: 1.6;
+}
