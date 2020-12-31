@@ -12,7 +12,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
 
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="css/styles.css" rel="stylesheet">
+  <script defer src="js/fontawesome.js"></script> 
+  <script defer src="js/solid.js"></script> 
+
 </head>
 <body>
   <main class="main-block">
@@ -20,44 +23,63 @@
     <div class="graphics graphics-right"></div><!-- right-graphic -->
     <div class="container">
       <div class="chat-app-wrap">
-        <div class="chat-app-header">
-          <div class="header-ios-head">...</div><!-- ios-head -->
-          <div class="header-head">
-            <div class="header-back-icon">...</div><!-- back-icon -->
-            <div class="header-user-info">
-              <img src="images/avatar.jpg" alt="Samuel Green profile image">
-              <h4>Samuel Green</h4>
-              <p>Available to Walk</p>
-            </div><!-- user-info -->
-            <div class="header-settings-icon">...</div><!-- settings-icon -->
-          </div><!-- chat-app-head -->
+        <div class="chat-app-container">
+          <div class="chat-app-header">
+            <div class="header-ios-head"></div><!-- ios-head -->
+            <div class="header-head">
+              <div class="header-chevron-left-icon"><i class="fas fa-chevron-left"></i></div><!-- back-icon -->
+              <div class="header-user-info">
+                <div class="user-info-avatar">
+                  <img class="avatar-img" src="images/avatar.jpg" alt="Samuel Green profile image" width="24" height="24">
+                </div><!-- user-info-avatar -->
+                <div class="user-info-content">
+                  <h4 class="info-content-username">Samuel Green</h4>
+                  <p class="info-content-status">Available to Walk</p>
+                </div><!-- user-info-content -->
+              </div><!-- user-info -->
+              <div class="header-ellipsis-v-icon"><i class="fas fa-ellipsis-v"></i></div><!-- settings-icon -->
+            </div><!-- chat-app-head -->
+          </div><!-- chat-app-header -->
           <div class="chat-app-body">
             <div class="body-chat-messages message-left">
-              <p>That sounds great. I’d be happy with that.</p>
-              <p>Could you send over some pictures of your dog, please?</p>
+              <p class="message-item">That sounds great. I’d be happy with that.</p>
+              <p class="message-item">Could you send over some pictures of your dog, please?</p>
             </div><!-- chat-messages -->
+            <div class="body-chat-images message-right">
+              <div class="chat-images-item">
+                <img src="images/dog-image-1.jpg" alt="wondering dog" width="40" height="40">
+              </div><!-- chat-images-item -->
+              <div class="chat-images-item">
+                <img src="images/dog-image-2.jpg" alt="dog lays on sands" width="40" height="40">
+              </div><!-- chat-images-item -->
+              <div class="chat-images-item">
+                <img src="images/dog-image-3.jpg" alt="dog carrys a tree stem" width="40" height="40">
+              </div><!-- chat-images-item -->
+            </div><!-- chat-images -->
             <div class="body-chat-messages message-right">
-              <p>Here are a few pictures. She’s a happy girl!</p>
-              <p>Can you make it?</p>
+              <p class="message-item">Here are a few pictures. She’s a happy girl!</p>
+              <p class="message-item">Can you make it?</p>
             </div><!-- chat-messages -->
-            <div class="body-chat-messages message-right">
-              <img src="images/dog-image-1.jpg" alt="wondering dog">
-              <img src="images/dog-image-2.jpg" alt="dog lays on sands">
-              <img src="images/dog-image-3.jpg" alt="dog carrys a tree stem">
-              <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
-
-              <p>30 minute walk
-              $29</p>
-      
-              <p>1 hour walk
-              $49</p>
+            <div class="body-chat-messages message-left">
+              <p class="message-item">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+              <div class="body-chat-plans">
+                <div class="chat-plan-item">
+                  <input class="plan-radio" name="choice" id="plan1" type="radio">
+                  <label class="plan-label" for="plan1">30 minute walk <span class="plan-price">$29</span></label>
+                  
+                </div><!-- chat-plan-item -->
+                <div class="chat-plan-item">
+                  <input class="plan-radio" name="choice" id="plan2" type="radio">
+                  <label class="plan-label" for="plan2">1 hour walk <span class="plan-price">$49</span></label>
+                </div><!-- chat-plan-item -->
+              </div><!-- body-chat-plans -->
             </div><!-- message-left -->
             <div class="chat-app-type-area">
               <p class="type-area-pleaceholder-text">Type a message…</p>
-              <button class="type-area-send-btn">send</button>
+              <button class="type-area-send-btn"><i class="fas fa-angle-right"></i></button>
             </div><!-- type area -->
           </div><!-- chat-app-body -->
-        </div><!-- chat-app-header -->
+        </div><!-- chat-app-container -->
       </div><!-- chat-app-wrap -->
       <div class="main-content-wrap">
         <h1 class="main-content-heading">Simple booking</h1>
@@ -65,14 +87,15 @@
         discuss arrangements and make bookings. Once the walk has been completed you can rate 
         your walker and book again all through the chat.</p>
       </div><!-- main-content-wrap -->
-      <footer>
+    </div><!-- container -->
+   
+      <!-- <footer class="footer">
         <div class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
           Coded by <a href="#">Your Name Here</a>.
-        </div><!-- attribution -->
-      </footer><!-- footer -->
-    </div><!-- container -->
+        </div>
+      </footer> -->
+    
   </main><!-- chat-app-block -->
-  
 </body>
 </html>
