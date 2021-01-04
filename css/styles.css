@@ -74,7 +74,7 @@ p {
 }
 
 .container {
-  width: 63.4vw;
+  width: 913px;
   height: 100%;
   display: flex;
   justify-content: right;
@@ -166,7 +166,7 @@ p {
 }
 
 .main-content-wrap {
-  width: 442px;
+  max-width: 442px;
 }
 
 .main-content-heading {
@@ -188,7 +188,7 @@ p {
   height: 419px;
   display: flex;
   flex-flow: column;
-  padding: 11px 7px 11px 8px;
+  padding: 11px 7px 11px 7px;
 }
 
 .body-chat-messages {
@@ -203,7 +203,7 @@ p {
   max-width: 60%;
   border-radius: 10px 10px 10px 4px;
   font-size: 0.5rem;
-  line-height: 1.4;
+  line-height: 1.38;
 }
 
 .message-item:last-child {
@@ -234,7 +234,7 @@ p {
   display: flex;
   justify-content: flex-end;
   grid-gap: 8px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .chat-images-item img {
@@ -246,12 +246,12 @@ p {
 }
 
 .chat-plan-item {
-  max-width: 75%;
+  max-width: 75.5%;
   display: flex;
   align-items: center;
   grid-gap: 8px;
   margin-bottom: 8px;
-  padding: 9px 16px 8px 8px;
+  padding: 9px 17px 8px 8px;
   border-radius: 10px 10px 10px 4px;
   font-size: 0.5rem;
   background: linear-gradient(to right, #e942ff, #8838ff);
@@ -325,15 +325,19 @@ p {
   justify-content: space-between;
   background-color: white;
   border-radius: 17px;
-  height: 37px;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-right: 5px;
 }
 
-.type-area-pleaceholder-text {
+.type-area-input {
+  width: 154px;
+  max-height: 34px;
   color: #c6cacd;
-  font-size: 0.5rem;
-  letter-spacing: 0.04em;
+  font-size: 0.531rem;
+  border: none;
+  letter-spacing: 0.02em;
+  padding-top: 19px;
+  padding-bottom: 15px;
 }
 
 .type-area-send-btn {
@@ -344,13 +348,12 @@ p {
   color: white;
   border: 0;
   font-size: 0.968rem;
-  padding-right: 5px;
+  padding-right: 6px;
   line-height: 1.6;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 576px) {
   .main-block {
-    width: 100%;
     height: 100%;
   }
 
@@ -369,17 +372,18 @@ p {
   }
 
   .container {
-    width: 63.4vw;
+    width: 80vw;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-flow: column;
     grid-gap: 65px;
     margin: 65px 0px 72px 0px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
 
   .main-content-wrap {
-    width: 303px;
     text-align: center;
   }
 }
