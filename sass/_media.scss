@@ -1,9 +1,6 @@
 // media queries
 
-@media  screen and (max-width: 576px) {
-    .main-block {
-        height: 100%;
-    }
+@media  screen and (max-width: 768px) {
     .graphics-left{
         width: 510px;
         height: 510px;
@@ -17,17 +14,16 @@
         left:50vw;
     }
     .container {
-        width: 80vw;
+        width: 81vw;
         height: 100%;
-        display:flex;
         justify-content: center;
         flex-flow: column;
-        grid-gap: 65px;
+        grid-gap: 0px;
         margin: 65px 0px 72px 0px;
-        padding-left: 34px;
-        padding-right: 34px
+        
     }
     .main-content-wrap{
         text-align: center;
+        margin-top: 65px;
     }
 }
