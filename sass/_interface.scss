@@ -1,25 +1,22 @@
 // Interface styles
 .container {
-    // position: relative;
-    width: 913px;
-    // width: 56.4vw;
+    // width: 913px;
+    width: 63.4vw;
     height: 100%;
     display:flex;
     justify-content: right;
     align-items:center;
     grid-gap: 125px;
-    // grid-gap: 8.7vw;
 }
 .chat-app-wrap {
     width:  247px;
-    // width: 17vw;
     height: 505px;
-    font-size: 10px;
+    font-size: 0.625rem;
     padding: 10px;
     padding-top: 11px;
     background-color: $white;
     border-radius: 30px;
-    box-shadow: 10px 16px 37px rgba(62, 39, 83, 0.15), 0px 73px 42px -52px rgba(62, 39, 83, 0.25);
+    box-shadow: 10px 16px 37px rgba(62, 39, 83, 0.10), 0px 73px 42px -52px rgba(62, 39, 83, 0.05);
 
 }
 .chat-app-container {
@@ -36,14 +33,14 @@
     align-items: center;
     color: $white;
     border-radius: 20px 20px 5px 5px;
-    background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    background: linear-gradient(to left, $gradients-1, $gradients-2);
+    box-shadow: 1px 6px 4px rgba(0, 0, 0, 0.05);
 }
 .header-ios-head {
     width: 129px;
     height: 18px;
     border-radius: 0px 0px 14px 14px;
     background-color: $white;
-    // margin: auto;
     flex-shrink: 0;
 }
 .header-head {
@@ -61,6 +58,7 @@
 .header-ellipsis-v-icon {
     width: 27px;
     text-align: right;
+    font-size: 0.437rem;
 }
 .header-user-info {
     width: 174px;
@@ -70,23 +68,23 @@
     grid-gap: 8px;
 }
 .avatar-img{
-    border: 1px solid #fff;
+    border: 1px solid $white;
     border-radius: 50%;
 }
 .info-content-username {
-    font-size: .656rem;
+    font-size: 0.656rem;
     font-weight: $font-normal;
     letter-spacing: 0.04em;
 }
 .info-content-status {
-    font-size: .5rem;
+    font-size: 0.5rem;
     color: $sub-heading;
     line-height: 1.5;
 }
 
 .main-content-wrap{
     width:  442px;
-    // width: 30.6vw
+    // width:  30.7vw;
 }
 .main-content-heading{
     color: $main-heading;
@@ -105,7 +103,6 @@
     height: 419px;
     display: flex;
     flex-flow: column;
-    // justify-content: space-between;
     padding: 11px 7px 11px 8px;
 }
 .body-chat-messages {
@@ -115,10 +112,11 @@
 }
 .message-item {
     margin-bottom: 8px;
-    padding: 7px;
-    max-width: 59%;
+    padding: 6px 8px;
+    max-width: 60%;
     border-radius: 10px 10px 10px 4px;
-    font-size: 8px;
+    font-size: 0.5rem;
+    line-height: 1.4;
 }
 .message-item:last-child {
     margin-bottom: 0;
@@ -127,13 +125,14 @@
     align-items: flex-start;
 }
 .message-left > .message-item {
-    background-color: hsl(275, 40%, 94%);
-    color: hsl(276, 55%, 52%);
+    background-color:    lighten($chat-left, 41%);
+    color: $chat-left;
 }
 .message-right > .message-item {
-    background-color: #fff;
-    color: hsl(271, 15%, 43%);
+    background-color: $white;
+    color: $chat-right;
     border-radius: 10px 10px 4px 10px;
+    box-shadow: 1px 6px 4px rgba(0, 0, 0, 0.05);
 }
 .message-right {
     align-items: flex-end;
@@ -142,7 +141,7 @@
     display: flex;
     justify-content: flex-end;
     grid-gap: 8px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 .chat-images-item img {
     border-radius: 10px;
@@ -158,9 +157,9 @@
     margin-bottom: 8px;
     padding: 9px 16px 8px 8px;
     border-radius: 10px 10px 10px 4px;
-    font-size: 8px;
-    background: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    color: white;
+    font-size: 0.5rem;
+    background: linear-gradient(to right, $gradients-1, $gradients-2);
+    color: $white;
 }
 .chat-plan-item:last-child {
     margin: 0;
@@ -177,11 +176,10 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
-    // margin-right: 16px;
     padding-left: 20px;
     cursor: pointer;  
 }
- // this creates the outer circle for faux radio button
+ // this creates the outer circle for plan-item radio button
 .plan-label:before {
     content: "";
     display: block;
@@ -195,8 +193,7 @@
     border-radius: 8px;
 }
 
-  // .options > label:after
-  // this creates the inner circle for active faux radio button
+  // this creates the inner circle for active plan-item radio button
 .plan-label:after {
     content: "";
       display: block;
@@ -217,7 +214,7 @@
       left: 3px;
 }
 .plan-price {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: $white;
     letter-spacing: 0.04em;
 }
@@ -241,9 +238,42 @@
     height: 24px;
     background-color: $send-btn-background;
     border-radius: 50%;
-    color: #fff;
+    color: $white;
     border: 0;
-    font-size: .968rem;
+    font-size: 0.968rem;
     padding-right: 5px;
     line-height: 1.6;
+} 
+@media  screen and (max-width:375px) {
+    .main-block {
+        width: 100%;
+        height: 100%;
+    }
+    .graphics-left{
+        width: 510px;
+        height: 510px;
+        right: 50vw;
+        background: -o-linear-gradient(245deg, $gradients-1 -100%, $gradients-2 120%);
+        background: linear-gradient(180deg, $gradients-1 -100%, $gradients-2 120%);
+    }
+    .graphics-right {
+        width: 510px;
+        height: 508px;
+        left:50vw;
+    }
+    .container {
+        // width:  247px;
+        width: 63.4vw;
+        height: 100%;
+        display:flex;
+        justify-content: center;
+        flex-flow: column;
+        grid-gap: 65px;
+        margin: 65px 0px 72px 0px;
+    }
+    .main-content-wrap{
+        width:  303px;
+        // width:  30.7vw;
+        text-align: center;
+    }
 }
