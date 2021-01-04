@@ -1,7 +1,7 @@
 // Interface styles
 .container {
-    // width: 913px;
-    width: 63.4vw;
+    width: 913px;
+    // width: 63.4vw;
     height: 100%;
     display:flex;
     justify-content: right;
@@ -83,7 +83,7 @@
 }
 
 .main-content-wrap{
-    width:  442px;
+    max-width:  442px;
     // width:  30.7vw;
 }
 .main-content-heading{
@@ -103,7 +103,7 @@
     height: 419px;
     display: flex;
     flex-flow: column;
-    padding: 11px 7px 11px 8px;
+    padding: 11px 7px 11px 7px;
 }
 .body-chat-messages {
     display: flex;
@@ -116,7 +116,7 @@
     max-width: 60%;
     border-radius: 10px 10px 10px 4px;
     font-size: 0.5rem;
-    line-height: 1.4;
+    line-height: 1.38;
 }
 .message-item:last-child {
     margin-bottom: 0;
@@ -136,12 +136,13 @@
 }
 .message-right {
     align-items: flex-end;
+    
 }
 .body-chat-images {
     display: flex;
     justify-content: flex-end;
     grid-gap: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 }
 .chat-images-item img {
     border-radius: 10px;
@@ -150,12 +151,12 @@
     width: 100%;
 }
 .chat-plan-item {
-    max-width: 75%;
+    max-width: 75.5%;
     display: flex;
     align-items: center;
     grid-gap: 8px;
     margin-bottom: 8px;
-    padding: 9px 16px 8px 8px;
+    padding: 9px 17px 8px 8px;
     border-radius: 10px 10px 10px 4px;
     font-size: 0.5rem;
     background: linear-gradient(to right, $gradients-1, $gradients-2);
@@ -224,14 +225,18 @@
     justify-content: space-between;
     background-color: $white;
     border-radius: 17px;
-    height: 37px;
-    padding-left: 20px;
+    padding-left: 19px;
     padding-right: 5px;
 }
-.type-area-pleaceholder-text {
-    color: $placeholder-text;
-    font-size: 0.5rem;
-    letter-spacing: .04em;
+.type-area-input {
+    width: 154px;
+    max-height: 34px;
+    color: #c6cacd;
+    font-size: 0.531rem;
+    border: none;
+    letter-spacing: 0.02em;
+    padding-top: 19px;
+    padding-bottom: 15px;
 }
 .type-area-send-btn {
     width: 24px;
@@ -241,39 +246,6 @@
     color: $white;
     border: 0;
     font-size: 0.968rem;
-    padding-right: 5px;
+    padding-right: 6px;
     line-height: 1.6;
-} 
-@media  screen and (max-width:375px) {
-    .main-block {
-        width: 100%;
-        height: 100%;
-    }
-    .graphics-left{
-        width: 510px;
-        height: 510px;
-        right: 50vw;
-        background: -o-linear-gradient(245deg, $gradients-1 -100%, $gradients-2 120%);
-        background: linear-gradient(180deg, $gradients-1 -100%, $gradients-2 120%);
-    }
-    .graphics-right {
-        width: 510px;
-        height: 508px;
-        left:50vw;
-    }
-    .container {
-        // width:  247px;
-        width: 63.4vw;
-        height: 100%;
-        display:flex;
-        justify-content: center;
-        flex-flow: column;
-        grid-gap: 65px;
-        margin: 65px 0px 72px 0px;
-    }
-    .main-content-wrap{
-        width:  303px;
-        // width:  30.7vw;
-        text-align: center;
-    }
 }
