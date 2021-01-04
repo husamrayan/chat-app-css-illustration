@@ -1,5 +1,5 @@
 // Base styles
-
+@use "sass:color";
 html {
     box-sizing: border-box;
 }
@@ -12,7 +12,6 @@ body {
     font-weight:    $font-normal;
     margin: 0;
     background-color:   $body-background;
-    // line-height: 1.3;
 }
 h1, h2 ,h3 , h4, h5, h6 {
     margin: 0;
@@ -26,7 +25,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    width:  100vw;
+    width:  100%;
     height: 100vh;
     z-index: 0;
     overflow: hidden;
@@ -36,37 +35,30 @@ p {
     z-index: -1;
 }
 .graphics-left {
-    // width: 35vw;
-    width: 510px;
-    // height: 88vh;
-    height: 700px;
+    width: 35vw;
+    height: 87.5vh;
     top: 0;
-    // left: -90px;
     right: 70.8vw;
-    // left: -6.2vw;
-    background: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
-    border-radius: 0px 0px 253px 253px;
+    background: -o-linear-gradient(245deg, $gradients-1 -40%, $gradients-2 100%);
+    background: linear-gradient(205deg, $gradients-1 -40%, $gradients-2 100%);
+    border-radius: 0px 0px 255px 245px;
 }
 .graphics-right {
-    // width: 35vw;
-    width: 510px;
-    // height: 85vh;
-    height: 681px;
+    width: 35vw;
+    height: 85vh;
     bottom: 0;
-    // left: 1116px;
     left: 77.5vw;
-    // right: -8.2vw;
-    background: linear-gradient(to top, hsl(293, 100%, 63%, 2.5%), hsl(264, 100%, 61%, 2.5%));
+    background: transparentize($gradients-2, 0.975);
     border-radius: 253px 253px 0px 0px;
 }
-// .footer {
-//     position: fixed;
-//     bottom:50px;
-// }
+.footer {
+    position: fixed;
+    bottom:50px;
+}
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 0.687rem; text-align: center; 
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: $attribution-color; 
     text-decoration: none;
 }
