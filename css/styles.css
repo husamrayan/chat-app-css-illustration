@@ -396,6 +396,7 @@ p {
     justify-content: center;
     flex-flow: column;
     grid-gap: 0px;
+    margin: 65px 0px 72px 0px;
   }
 
   .chat-app-wrap {
