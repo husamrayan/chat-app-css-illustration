@@ -322,13 +322,16 @@ p {
 .type-area-input {
   width: 154px;
   max-height: 34px;
-  color: #c6cacd;
   font-size: 0.531rem;
   border: none;
   letter-spacing: 0.02em;
   padding-top: 19px;
   padding-bottom: 15px;
   outline: none;
+}
+
+.type-area-input::placeholder {
+  color: #c6cacd;
 }
 
 .type-area-send-btn {
