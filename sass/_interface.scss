@@ -228,7 +228,6 @@
 .type-area-input {
     width: 154px;
     max-height: 34px;
-    color: #c6cacd;
     font-size: 0.531rem;
     border: none;
     letter-spacing: 0.02em;
@@ -236,6 +235,9 @@
     padding-bottom: 15px;
     outline: none;
 }
+.type-area-input::placeholder {
+    color: $placeholder-text;
+  }
 .type-area-send-btn {
     width: 24px;
     height: 24px;
