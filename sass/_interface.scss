@@ -14,7 +14,6 @@
     border-radius: 30px;
     box-shadow: 10px 16px 37px rgba(62, 39, 83, 0.10), 0px 73px 42px -52px rgba(62, 39, 83, 0.05);
     margin-right:125px;
-
 }
 .chat-app-container {
     width: 100%;
@@ -115,34 +114,31 @@
     font-size: 0.5rem;
     line-height: 1.38;
 }
-.message-item:last-child {
-    margin-bottom: 0;
+.message-item:nth-child(5){
+    margin-bottom: 16px;
 }
 .message-left {
-    align-items: flex-start;
-}
-.message-left > .message-item {
-    background-color:    lighten($chat-left, 41%);
+    background-color: lighten($chat-left, 41%);
     color: $chat-left;
 }
-.message-right > .message-item {
+.message-right  {
+    align-self: flex-end;
     background-color: $white;
     color: $chat-right;
     border-radius: 10px 10px 4px 10px;
     box-shadow: 1px 6px 4px rgba(0, 0, 0, 0.05);
-}
-.message-right {
-    align-items: flex-end;
-    
 }
 .body-chat-images {
     display: flex;
     justify-content: flex-end;
     grid-gap: 8px;
     margin-bottom: 5px;
+    margin-top: 8px;
 }
 .chat-images-item img {
     border-radius: 10px;
+    width: 40px;
+    height: 40px;
 }
 .body-chat-plans {
     width: 100%;
@@ -245,6 +241,7 @@
     border-radius: 50%;
     color: $white;
     border: 0;
-    font-size: 0.968rem;
-    
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;    
 }
